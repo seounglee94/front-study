@@ -1,25 +1,25 @@
 const caculater = {
-    add : function(a, b) {
-        console.log(a + b)
+    plus : function(a, b) {
+        return(a + b)
     },
     minus : function(a, b) {
-        console.log(a - b)
+        return(a - b)
     },
-    multi : function(a, b) {
-        console.log(a * b)
+    times : function(a, b) {
+        return(a * b)
     },
-    div : function(a, b) {
-        console.log(a / b)
+    divide : function(a, b) {
+        return(a / b)
     },
     power :function(a, b) {
-        console.log(a ** b)
+        return(a ** b)
     }
 }
 
+const plusResult = caculater.plus(5, 2);
+const minusResult = caculater.minus(plusResult, 5);
+const timeResult = caculater.times(10, minusResult);
+const divideResult = caculater.divide(timeResult, plusResult);
+const powerResult = caculater.power(divideResult, minusResult);
 
-caculater.add(1, 1);
-caculater.minus(19 , 2);
-caculater.multi(2, 8);
-caculater.div(8, 4);
-caculater.power(2, 2);
 
